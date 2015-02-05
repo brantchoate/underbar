@@ -176,7 +176,6 @@
     describe('uniq', function() {
       it('should return all unique values contained in an unsorted array', function() {
         var numbers = [1, 2, 1, 3, 1, 4];
-
         expect(_.uniq(numbers)).to.eql([1, 2, 3, 4]);
       });
 
@@ -247,7 +246,6 @@
       it('should use the first element as an accumulator when none is given', function() {
         var add = function(tally, item) {return tally + item; };
         var total = _.reduce([1, 2, 3], add);
-
         expect(total).to.equal(6);
       });
 
