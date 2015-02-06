@@ -171,7 +171,7 @@
         var to = { a: 10 };
         var from = { a: 1 };
         var defaulted = _.defaults(to, from);
-
+        console.log(defaulted.a);
         expect(defaulted.a).to.equal(10);
       });
 
